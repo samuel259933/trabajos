@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Registro de Usuario</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" required min="1">
+            </div>
+            <div class="buttons">
+                <button type="button" id="saveButton">Guardar Datos</button>
+                <button type="button" id="clearButton">Limpiar Datos</button>
+            </div>
+        </form>
+
+        <section id="output">
+            <h2>Datos Guardados</h2>
+            <p id="userData">No hay información almacenada.</p>
+        </section>
+
+        <section id="interactionCounter">
+            <h2>Interacciones en esta sesión</h2>
+            <p id="counter">0</p>
+        </section>
+    </main>
+
+    <script src="gestion.js"></script>
+</body>
+</html>
